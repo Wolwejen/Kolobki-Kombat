@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>колобки комбат</title>
+</head>
+<body>
+  <script></script>
+    <style>
+    body
+    {
+        background-color : #da7400
+    }
+    </style>
+
+ 
+ 
+    <center>
+        <img src="https://i.postimg.cc/MHdYFNdS/131-20240922014819.png" width="350" height="150"
+    </center>
+
+
+
+  <script>
+        let counter = 0;
+        
+        function countClicks(event) {
+            if (event.target.id === 'image') {
+                counter++;
+                document.getElementById('counter').innerHTML = 
+                ` ${counter} `;
+            }            
+        }
+        
+    </script>
+<center>
+
+ <h2 id="counter"></h2>
+  
+ 
+    <img id="image" src="https://i.postimg.cc/P5RxrzBq/default-plain.png" alt="" onclick="countClicks(event)" height="250" width="250">
+    </center>
+    
+    <h1>Магазин</h1>
+    
+    <h2 align="right">Kintaro</h2>
+    
+    <img align="left" src="https://i.postimg.cc/pLXmgQHD/kintaro-2-hq.png" height="150" width="150"></img>
+    
+    <script>
+function changeImgSrc(id, src) {
+var img = document.getElementById(id);
+if (img != null) img.src = src;
+}
+</script>
+
+<button onClick="changeImgSrc('image', ' https://i.postimg.cc/pLXmgQHD/kintaro-2-hq.png ')">Использовать </button>
+
+
+    
+    
+</body>
+</html>
